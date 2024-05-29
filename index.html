@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My resume</title>
+</head>
+<body>
+    <div class="slider_container">
+        <div class="slider_wrapper" id="slider_wrapper">
+            <button id="image1_button" class="slider_button"></button>
+            <button id="image2_button" class="slider_button"></button>
+            <button id="image3_button" class="slider_button"></button>
+            <img src="./img/slider_image1.jpg" alt="My photo" id="slider_image1" class="slider_image">
+            <img src="./img/slider_image3.jpg" alt="My photo" id="slider_image2" class="slider_image">
+            <img src="./img/slider_image2.jpg" alt="My photo" id="slider_image3" class="slider_image">
+        </div>
+        <div class="slider_wrapper_text">
+            <div class="slider_logo_box">
+                <span class="roca">Roca<span class="roca_dot">.</span></span>
+                <span class="roca_zerOne">01<span class="roca_about_me">about me</span></span>
+            </div>
+            <div class="slider_aboutMe_box">
+                <span>Hi, I’ Am</span>
+                <span class="my_name">Nikusha Donadze</span>
+                <span class="who_am_i">I am Front-end Web Developer</span>
+            </div>
+            <div class="slider_socialMedia_icons">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img class="icon_images" src="./img/facebook.svg" alt="facebook">
+                </a>
+                <a href="https://github.com/NDonadze" target="_blank">
+                    <img class="icon_images" src="./img/github.svg" alt="github">
+                </a>
+                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                    <img class="icon_images" src="./img/google.svg" alt="google">
+                </a>
+                <a href="https://www.linkedin.com/in/nikusha-donadze-478700301/?trk=opento_sprofile_topcard">
+                    <img src="./img/linkedin.svg" alt="Linkedin" class="icon_image">
+                </a>
+            </div>
+            <div class="slider_client_section">
+                <span class="client_name"> <span class="hundred_percent">100%</span> satisfied client</span>
+                <div class="satisfied_level_bar">
+                    <div id="level_bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="more_information_container">
+        <div class="more_about_me">
+            <div>
+                <p class="full_name">Nikusha Donadze</p>
+                <p class="profession">Front-end Web Developer</p>
+            </div>
+            <p class="about_me">Hello, i'm junior Front-end web developer. I'm new in the programmer's world, but i'm so determined to become a successful and one of the best in this field. Also, i'm very skillful and my hard-working helps me, that learn most of the stuffs so easily and qualitatively.</p>
+            <div>
+                <button id="hire_me">Hire me</button>
+            </div>
+        </div>
+        <div class="more_my_photo">
+            <img src="./img/my_photo.jpg" alt="My photo" class="my_photo">
+        </div>
+        <div class="my_skills">
+            <div>
+                <p>Git Hub <span class="skill_percent">(80%)</span></p>
+                <div class="outside_bar">
+                    <div id="github_bar"></div>
+                </div>
+            </div>
+            <div>
+                <p>HTML & CSS <span class="skill_percent">(90%)</span></p>
+                <div class="outside_bar">
+                    <div id="html_bar"></div>
+                </div>
+            </div>
+            <div>
+                <p>Creativity <span class="skill_percent">(100%)</span></p>
+                <div class="outside_bar">
+                    <div id="creativity_bar"></div>
+                </div>
+            </div>
+            <div>
+                <p>Responsibility <span class="skill_percent">(100%)</span></p>
+                <div class="outside_bar">
+                    <div id="responsibility_bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        const firstSliderButton = document.getElementById("image1_button")
+        const secondSliderButton = document.getElementById("image2_button")
+        const thirdSliderButton = document.getElementById("image3_button")
+
+        const sliderImage1 = document.getElementById("slider_image1")
+        const sliderImage2 = document.getElementById("slider_image2")
+        const sliderImage3 = document.getElementById("slider_image3")
+
+        firstSliderButton.addEventListener("click", ()  => {
+            sliderImage1.style.display = "flex"
+            sliderImage2.style.display ="none"
+            sliderImage3.style.display ="none"
+        })
+
+        secondSliderButton.addEventListener("click", ()  => {
+            sliderImage2.style.display ="flex"
+            sliderImage1.style.display ="none"
+            sliderImage3.style.display ="none"
+        })
+        thirdSliderButton.addEventListener("click", () => {
+            sliderImage3.style.display ="flex"
+            sliderImage1.style.display ="none"
+            sliderImage2.style.display ="none"
+        })
+
+
+
+        const github = document.getElementById("github_bar")
+        const html = document.getElementById("html_bar")
+        const creativity = document.getElementById("creativity_bar")
+        const resp = document.getElementById("responsibility_bar") 
+        
+        window.onscroll = () => {
+            let scroll = window.scrollY
+            if (scroll > 400) {
+                github.style.backgroundColor = "#E93656"
+                github.style.transitionDuration = "1s"
+                github.style.transitionTimingFunction = "linear"
+
+                html.style.backgroundColor = "#E93656"
+                html.style.transitionDuration = "1.5s"
+                html.style.transitionTimingFunction = "linear"
+
+                creativity.style.backgroundColor = "#E93656"
+                creativity.style.transitionDuration = "2s"
+                creativity.style.transitionTimingFunction = "linear"
+
+                resp.style.backgroundColor = "#E93656"
+                resp.style.transitionDuration = "2.5s"
+                resp.style.transitionTimingFunction = "linear"
+            }
+        }
+
+
+        
+
+
+
+    </script>
+    
+
+
+
+
+    
+</body>
+</html>
