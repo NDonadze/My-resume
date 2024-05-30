@@ -89,7 +89,120 @@
             </div>
         </div>
     </div>
-
+    <div class="information_footer_wrapper">
+        <div class="information_footer">
+            <div class="information_box"> 
+                <div class="information_icon_outbox">
+                    <img src="./img/phone_icon.png" alt="Phone icon" class="phone_icon">
+                </div>
+                <div>
+                    <p class="information_title">Phone number</p>
+                    <p class="information_text">+995 599 211 699</p>
+                </div>
+            </div>
+            <div class="information_box">
+                <div class="information_icon_outbox">
+                    <img src="./img//address_icon.png" alt="Pin icon" class="phone_icon">
+                </div>
+                <div>
+                    <p class="information_title">My address</p>
+                    <p class="information_text">Georgia, Tbilisi</p>
+                </div>
+            </div>
+            <div class="information_box">
+                <div class="information_icon_outbox">
+                    <img src="./img/mail_icon.png" alt="Mail icon" class="phone_icon">
+                </div>
+                <div>
+                    <p class="information_title">Email address</p>
+                    <p class="information_text">Nikushadonadze20@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="service_container">
+        <div class="service_box" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            <p class="service_name">HTML layout</p>
+            <p>I can create HTML layout, which is fully working.</p>
+        </div>
+        <div class="service_box" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            <p class="service_name">CSS styles</p>
+            <p>I can style every element or section, which will be unique.</p>
+        </div>
+        <div class="service_box" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            <p class="service_name">JS functions</p>
+            <p>I can write JS function, which customers can do an action.</p>
+        </div>
+        <div class="service_box" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            <p class="service_name">Responsive Design</p>
+            <p>I can wite media-queries, which will work on any device.</p>
+        </div>
+        <div class="service_box" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            <p class="service_name">Smooth transitions</p>
+            <p>I can make smooth transitions, for example: Hover, KeyFrames and more.</p>
+        </div>
+        <div class="service_box" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            <p class="service_name">Unique ideas</p>
+            <p>If you don't like something in web design, i can give advice about environment.</p>
+        </div>
+        <div class="service_box" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            <p class="service_name">Support</p>
+            <p>I will be supportive to you.</p>
+        </div>
+        <div class="service_box" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            <p class="service_name">Hover effects</p>
+            <p>I can create magic hover effects!</p>
+        </div>
+    </div>
+    <div class="recomendation_container">
+        <div class="recomendation_box">
+            <div class="recm_wrapper" id="recm_wrapper_1">
+                <div class="recm_text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam architecto suscipit non odit, vel quas esse dolore eligendi eos pariatur quis molestiae rem vero voluptatibus aspernatur recusandae maiores, laudantium molestias?
+                </div>
+                <div class="recm_photo">
+                    <img src="./img/js_founder.jpg" alt="brenden eich" class="recm_img">
+                    <button class="recm_button" id="recm_1"></button>
+                    <button class="recm_button" id="recm_2"></button>
+                    <button class="recm_button" id="recm_3"></button>
+                    <div>
+                        <p class="recm_title">Brenden eich</p>
+                        <p class="recm_profession">JS founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="recm_wrapper" id="recm_wrapper_2">
+                <div class="recm_text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam architecto suscipit non odit, vel quas esse dolore eligendi eos pariatur quis molestiae rem vero voluptatibus aspernatur recusandae maiores, laudantium molestias?
+                    </div>
+                    <div class="recm_photo">
+                        <img src="./img/elon_musk.jpg" alt="Elon musk" class="recm_img">
+                        <button class="recm_button" id="recm_1"></button>
+                        <button class="recm_button" id="recm_2"></button>
+                        <button class="recm_button" id="recm_3"></button>
+                        <div>
+                            <p class="recm_title">Elon musk</p>
+                            <p class="recm_profession">Tesla Company Founder</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="recm_wrapper" id="recm_wrapper_3">
+                <div class="recm_text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam architecto suscipit non odit, vel quas esse dolore eligendi eos pariatur quis molestiae rem vero voluptatibus aspernatur recusandae maiores, laudantium molestias?
+                    </div>
+                    <div class="recm_photo">
+                        <img src="./img/jeff_bezos.webp" alt="Jeff bezos" class="recm_img">
+                        <button class="recm_button" id="recm_1"></button>
+                        <button class="recm_button" id="recm_2"></button>
+                        <button class="recm_button" id="recm_3"></button>
+                        <div>
+                            <p class="recm_title">Jeff bezos</p>
+                            <p class="recm_profession">CEO of Amazon</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -147,6 +260,57 @@
                 resp.style.transitionTimingFunction = "linear"
             }
         }
+
+
+        function mouseOver(obj) {
+            obj.style.backgroundColor = "#131A36"
+            obj.style.color = "white"
+            obj.style.transitionDuration = "0.3s"
+            obj.style.transitionTimingFunction = "linear"
+
+        }
+
+        function mouseOut (obj) {
+            obj.style.backgroundColor = "rgb(236, 236, 236)"
+            obj.style.color = "rgb(236, 236, 236)"
+        }
+
+        // const serviceBox = document.getElementsByClassName("service_box")
+        // serviceBox.addEventListener("onmouseover", mouseOver)
+
+
+        const recmOne = document.getElementById("recm_1")
+        const recmTwo = document.getElementById("recm_2")
+        const recmThree = document.getElementById("recm_3")
+
+        const recmFirst = document.getElementById("recm_wrapper_1")
+        const recmSecond = document.getElementById("recm_wrapper_2")
+        const recmThird = document.getElementById("recm_wrapper_3")
+
+        recmOne.addEventListener("click", () => {
+            recmFirst.style.display = "flex"
+            recmSecond.style.display = "none"
+            recmThird.style.display = "none"
+        })
+
+        recmTwo.addEventListener("click", () => {
+            recmSecond.style.display = "flex"
+            recmFirst.style.display = "none"
+            recmThird.style.display = "none"
+        })
+
+        recmThree.addEventListener("click", () => {
+            recmThird.style.display = "flex"
+            recmFirst.style.display = "none"
+            recmSecond.style.display = "none"
+        })
+
+
+
+
+
+
+
 
 
         

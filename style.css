@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 .slider_container{
     margin: 20px auto;
     max-width: 1400px;
@@ -181,6 +184,7 @@
     align-content: center;
     gap: 20px;
     margin: 50px auto;
+    margin-bottom: 0px;
     max-width: 1400px;
     width: 100vw;
     max-height: 700px;
@@ -265,6 +269,171 @@
     height: 6px;
     border-radius: 6px;
 }
+.phone_icon{
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+.information_footer_wrapper{
+    background-color: #131A36;
+    max-width: 100vw;
+    display: flex;
+}
+.information_footer{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    width: 100vw;
+}
+.information_box{
+    background-color: #131A36;
+    display: flex;
+    gap: 15px;
+    padding: 30px 10px;
+    padding-left: 40px;
+    max-width: 400px;
+    width: 100vw;
+    color: white;
+}
+.information_title{
+    font-size: 22px;
+    font-weight: 600;
+}
+.information_text{
+    font-size: 18px;
+    padding-top: 15px;
+}
+.information_icon_outbox{
+    border-radius: 50%;
+    padding: 10px;
+}
+.information_icon_outbox:hover{
+    background-color: #E93656;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.service_container{
+    max-width: 1200px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 40px auto;
+}
+.service_box{
+    height: 300px;
+    max-width: 300px;
+    width: 100vw;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: rgb(236, 236, 236);
+
+}
+.service_name{
+    font-size: 28px;
+    font-weight: 600;
+    color: #131A36;
+}
+.recomendation_container{
+    background-color: rgb(93, 93, 93);
+    margin-top: 100px;
+    width: 100vw;
+    background-size: cover;
+    min-height: 400px;
+    padding-left: 100px;
+}
+.recomendation_box{
+    background-color: rgb(93, 93, 93);
+    max-width: 1400px;
+    width: 100vw;
+    max-height: 400px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-left: 200px;
+}
+.recm_button{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+.recm_wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100vw;
+    min-width: 700px;
+}
+.recm_button:hover{
+    background-color: #363636;
+    border: 4px solid white;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+.recm_text{
+    min-width: 400px;
+    width: 100vw;
+    color: rgb(255, 255, 255);
+    max-height: 400px;
+    height: 100vh;
+    font-size: 22px;
+    text-align: center;
+    align-content: center;
+}
+.recm_photo{
+    background-color: rgb(93, 93, 93);
+    display: flex;
+    gap: 20px;
+   align-items: center;
+   min-width: 500px;
+   position: relative;
+}
+.recm_img{
+    width: 170px;
+    height: 200px;
+    border-radius: 50%;
+}
+.recm_title{
+    width: 200px;
+    font-size: 34px;
+    color: white;
+}
+.recm_profession{
+    font-size: 20px;
+    color: #ffffff;
+}
+#recm_1{
+    position: absolute;
+    right: 30px;
+    top: 100px;
+}
+#recm_2{
+    position: absolute;
+    right: 30px;
+    top: 175px;
+}
+#recm_3{
+    position: absolute;
+    right: 30px;
+    top: 250px;
+}
+#recm_wrapper_2{
+    display: none;
+}
+#recm_wrapper_3{
+    display: none;
+}
+
+
+
 
 
 
@@ -305,7 +474,68 @@
     }
     .my_skills{
         padding-left: 30px;
-        }
+    }
+    .information_footer_wrapper{
+        margin-top: 600px;
+        margin-left: 50px;
+        border-radius: 10px;
+    }
+    .information_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 10px;
+    }
+    .information_box{
+        border-radius: 10px;
+    }
+    .service_container{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 40px;
+        gap: 20px;
+    }
+    .service_box{
+        max-width: 180px;
+    }
+    .service_name{
+        font-size: 25px;
+    }
+    .recomendation_container{
+        padding-left: 0px;
+        background-color: white;
+    }
+    .recomendation_box{
+        padding-left: 0px;
+        margin-left: 50px;
+    }
+    .recm_wrapper{
+        padding-top: 20px;
+        padding-left: 20px;
+        flex-direction: column-reverse;
+        gap: 0px;
+        min-width: 0px;
+        background-color: rgb(93, 93, 93);
+    }
+    .recm_text{
+        max-width: 400px;
+        font-size: 22px;
+        text-align: left;
+    }
+    .recm_photo{
+        min-width: 300px;
+    }
+    #recm_1{
+        top: 200px;
+        right: 150px;
+    }
+    #recm_2{
+        top: 200px;
+        right: 80px;
+    }
+    #recm_3{
+        top: 200px;
+        right: 10px;
+    }
 }
 @media(max-width:420px){
     .slider_container{
@@ -323,6 +553,26 @@
     .more_information_container{
         margin-top: 180px;
     }
+    .recomendation_container{
+        margin-top: 50px;
+    }
+    .recomendation_box{
+        margin-left: 30px;
+    }
+    .recm_wrapper{
+        padding-left: 5px;
+    }
+    .recm_text{
+        font-size: 16px;
+        text-align: left;
+        min-width: 0px;
+    }
+    .recm_title{
+        font-size: 25px;
+    }
+    .recm_profession{
+        font-size: 18px;
+    }
 }
 @media(max-width:360px){
     #image1_button{
@@ -337,6 +587,19 @@
     .more_information_container{
         padding-left: 0;
         margin-top: 70px;
+    }
+    .information_footer_wrapper{
+        margin-left: 30px;
+    }
+    .information_box{
+        padding-left: 0px;
+    }
+    .service_container{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 30px;
+    }
+    .service_box{
+        max-width: 400px;
     }
     
 }
