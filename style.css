@@ -356,6 +356,7 @@ body{
     height: 100vh;
     margin: 0 auto;
     padding-left: 200px;
+    position: relative;
 }
 .recm_button{
     width: 35px;
@@ -392,9 +393,9 @@ body{
     background-color: rgb(93, 93, 93);
     display: flex;
     gap: 20px;
-   align-items: center;
-   min-width: 500px;
-   position: relative;
+    align-items: center;
+    min-width: 500px;
+    position: relative;
 }
 .recm_img{
     width: 170px;
@@ -412,27 +413,196 @@ body{
 }
 #recm_1{
     position: absolute;
-    right: 30px;
+    left: 10px;
     top: 100px;
 }
 #recm_2{
     position: absolute;
-    right: 30px;
-    top: 175px;
+    left: 10px;
+    top: 170px;
 }
 #recm_3{
     position: absolute;
-    right: 30px;
-    top: 250px;
+    left: 10px;
+    top: 240px;
 }
-#recm_wrapper_2{
+#recm_wrapper_2, #recm_wrapper_3{
     display: none;
 }
-#recm_wrapper_3{
-    display: none;
+.project_title{
+    font-size: 60px;
+    text-align: center;
+    margin: 100px auto;
 }
+.latest_project_container{
+    max-width: 1000px;
+    width: 100vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.project_names{
+    max-width: 200px;
+    width: 100vw;
+    background-color: #131A36;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+.project_name_box{
+    color: white;
+    font-size: 16px;
+    background-color: #131A36;
+    border: none;
+    width: 150px;
+}
+#projects_card_wrapper{
+    max-width: 930px;
+    width: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.project_card{
+    height: 250px;
+    max-width: 300px;
+    width: 100vw;
+    border: 2px solid #666;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+.articles_container{
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100vw;
+}
+.articles_wrapper{
+    max-width: 1000px;
+    width: 100vw;
+    display: flex;
+    max-height: 500px;
+    height: 100vh;
+}
+.articles_wrapper_different{
+    max-width: 1000px;
+    width: 100vw;
+    display: flex;
+    max-height: 500px;
+    height: 100vh;
+    align-self: flex-end;
+    margin-left: 150px;
+}
+.article_content{
+    min-width: 410px;
+    max-height: 500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #FAFAFA;
+}
+.company_name{
+    font-size: 14px;
+    color: #555555;
+}
+.article_profession{
+    font-size: 35px;
+}
+.article_icon_box{
+    padding: 10px;
+}
+.article_icon{
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    scale: 1.5;
+}
+.article_year_box{
+    max-width: 100px;
+    width: 100vw;
+    max-height: 500px;
+    height: 100vh;
+    background-color: #131A36;
+    color: #E93656;
+    align-content: center;
+}
+.article_year{
+    rotate: -90deg;
+    font-size: 18px;
+}
+.article_photo{
+    max-height: 500px;
+    height: 100vh;
+    background-image: url(./img/article_photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 500px;
+}
+#article_title{
+    margin-top: 50px;
+}
+.rosa_team_container{
+    max-width: 1200px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    margin: 0 auto;
+}
+.rosa_team_box{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    margin-left: 50px;
+}
+.rosa_team_text{
+    padding: 2px;
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    min-width: 150px;
+    min-height: 150px;
+    box-shadow: 0px 0px 20px #e0e0e0;
+    display: none;
+    scale: 1.1;
+    border-radius: 10px;
+}
+#rosaBox1{
+    background-image: url(./img/burberry_logo.jpg);
+}
+#rosaBox2{
+    background-image: url(./img/apple_logo.webp);
+    background-position: center;
 
-
+}
+#rosaBox3{
+    background-image: url(./img/amazon_logo.png);
+}
+#rosaBox4{
+    background-image: url(./img/mc_logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#rosaBox5{
+    background-image: url(./img/nike_logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 
 
@@ -525,16 +695,88 @@ body{
         min-width: 300px;
     }
     #recm_1{
-        top: 200px;
-        right: 150px;
+       left:30px;
+       top: 250px;
     }
     #recm_2{
-        top: 200px;
-        right: 80px;
+        top: 250px;
+        left: 100px;
     }
     #recm_3{
-        top: 200px;
-        right: 10px;
+        top: 250px;
+        left: 170px;
+    }
+    .latest_project_container{
+        flex-direction: column;
+    }
+    .project_names{
+        max-width:600px;
+        width: 100vw;
+        padding: 10px;
+        gap: 15px;
+        border-radius: 10px;
+    }
+    .project_title{
+        margin:250px 0px 40px 50px;
+        font-size: 45px;
+    }
+    #projects_card_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 40px;
+        gap: 10px;
+        width: 100vw;
+    }
+    .project_card{
+        max-width: 180px;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+    .article_content{
+        min-width: 0px;
+        max-height: 500px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+        background-color: #FAFAFA;
+    }
+    .articles_wrapper{
+        max-width: 1000px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        max-height: 500px;
+        height: 100vh;
+    }
+    .articles_wrapper_different{
+        max-width: 1000px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        max-height: 500px;
+        height: 100vh;
+        margin-left: 50px;
+    }
+    .article_year_box{
+        max-width: 550px;
+        width: 100vw;
+        text-align: center;
+        rotate: none;
+        font-size: 18px;
+        height: 100px;
+    }
+    .article_year{
+        rotate: none;
+    }
+    .article_photo{
+        min-width: 0px;
+    }
+    .rosa_team_container{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
     }
 }
 @media(max-width:420px){
@@ -573,6 +815,10 @@ body{
     .recm_profession{
         font-size: 18px;
     }
+    .project_names{
+        max-width: 400px;
+        margin-left: 30px;
+    }
 }
 @media(max-width:360px){
     #image1_button{
@@ -601,5 +847,18 @@ body{
     .service_box{
         max-width: 400px;
     }
+    .project_title{
+        font-size: 40px;
+    }
+    #projects_card_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 30px;
+        gap: 10px;
+        width: 100vw;
+    }
+    .project_card{
+        max-width: 400px;
+    }
+
     
 }
