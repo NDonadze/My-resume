@@ -571,7 +571,7 @@ body{
     padding: 5px;
     justify-content: center;
     flex-direction: column;
-    color: black;
+    color: rgb(70, 70, 70);
     background-color: white;
     min-width: 150px;
     min-height: 150px;
@@ -602,6 +602,51 @@ body{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.form_container{
+    margin: 0 auto;
+    min-width:1200px;
+    margin-top: 100px;
+    min-height: 400px;
+    max-height: 500px;
+    height: 100vh;
+    background-image: url(./img/map.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#form{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#message_textarea{
+    min-height: 100px;
+    border: none;
+    padding: 5px;
+}
+.form_title{
+    color: rgb(50, 50, 50);
+}
+input{
+    border: none;
+    padding: 5px;
+}
+#submit_button{
+    width: 157px;
+    margin-top: 20px;
+    align-self: center;
+    height: 30px;
+    color: #E93656;
+    border: 2px solid #E93656;
+    background-color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 
@@ -777,6 +822,24 @@ body{
     .rosa_team_container{
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
+    }
+    .form_container{
+        min-width: 0px;
+        max-width: 530px;
+        width: 120vw;
+        padding: 20px;
+        justify-content: flex-start;
+        min-height: 0px;
+        height: 400px;
+        margin-top: 50px;
+    }
+    .input_type_box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+    }
+    input{
+        min-width: 350px;
     }
 }
 @media(max-width:420px){
