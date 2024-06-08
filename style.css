@@ -533,19 +533,31 @@ body{
     height: 100vh;
     background-color: #131A36;
     color: #E93656;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .article_year{
     rotate: -90deg;
-    font-size: 18px;
+    font-size: 15px;
+    width: 70px;
 }
 .article_photo{
     max-height: 500px;
     height: 100vh;
-    background-image: url(./img/article_photo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     min-width: 500px;
+}
+#article_1{
+    background-image: url(./img/article_1.jpg);
+    background-size: cover;
+}
+#article_2{
+    background-image: url(./img/article_2.webp);
+    background-size: cover;
+}
+#article_3{
+    background-image: url(./img/article_3.jpg);
+    background-size: cover;
 }
 #article_title{
     margin-top: 50px;
@@ -589,7 +601,10 @@ body{
 
 }
 #rosaBox3{
-    background-image: url(./img/amazon_logo.png);
+    background-image: url(./img/zara.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #rosaBox4{
     background-image: url(./img/mc_logo.png);
@@ -648,7 +663,49 @@ input{
     font-size: 12px;
     letter-spacing: 1px;
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#read_more{
+    font-size: 11px;
+    padding: 2px 3px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+#footer{
+    margin-top: 0px;
+    background-color: #282828;
+    background-image: none;
+    gap: 20px;
+    height: 300px;
+}
+.roca_footer_title{
+    color: white;
+    font-size: 45px;
+}
+.title_dot{
+    color: #E93656;
+    font-size: 50px;
+}
+.footer_content{
+    font-size: 20px;
+    color: #939393;
+}
+.footer_icon{
+    width: 40px;
+    height: 40px;
+}
+#after_footer{
+    color: #cacaca;
+    text-align: center;
+    margin-top: 0px;
+    min-height: 0px;
+    max-height: 100px;
+    background-image: none;
+    background-color: #171717;
+}
 
 
 
@@ -830,7 +887,7 @@ input{
         padding: 20px;
         justify-content: flex-start;
         min-height: 0px;
-        height: 400px;
+        height: 450px;
         margin-top: 50px;
     }
     .input_type_box{
