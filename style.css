@@ -719,6 +719,9 @@ a{
         padding: 15px;
         gap: 20px;
     }
+    #image1_button, #image2_button, #image3_button{
+        bottom: 55px;
+    }
     .slider_client_section, .slider_socialMedia_icons, .slider_logo_box{
         scale: 0.7;
     }
@@ -904,6 +907,9 @@ a{
     .slider_container{
         height: 1100px;
     }
+    #image1_button, #image2_button, #image3_button{
+        bottom: 20px;
+    }
     #image1_button{
         left: 130px;
     }
@@ -915,6 +921,9 @@ a{
     }
     .more_information_container{
         margin-top: 250px;
+    }
+    .more_about_me{
+        margin-top: 100px;
     }
     .recomendation_container{
         margin-top: 50px;
