@@ -79,8 +79,9 @@ body{
     justify-content: space-between;
     align-items: top;
     max-width: 850px;
-    padding-right: 20px;
+    padding-right: 50px;
     width: 100vw;
+    font-family: poppins;
 }
 .roca{
     font-size: 40px;
@@ -92,16 +93,16 @@ body{
     color: #0081FF;
 }
 .roca_zerOne{
-    font-size: 150px;
+    font-size: 120px;
     font-weight: 600;
     position: relative;
 }
 .roca_about_me{
-    font-size: 44px;
+    font-size: 35px;
     width: 300px;
     position: absolute;
-    left: -20px;
-    top: 50px;
+    left: -30px;
+    top: 60px;
     z-index: 1;
     color: #373737;
 }
@@ -110,6 +111,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    font-family: roboto;
 }
 .my_name{
     font-size: 71px;
@@ -135,6 +137,7 @@ body{
     gap: 15px;
     flex-direction: column;
     padding-right: 60px;
+    font-family: montserrat;
 }
 .hundred_percent{
     color: #E93656;
@@ -191,6 +194,7 @@ body{
     height: 100vh;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
+    font-family: roboto;
 }
 .more_about_me{
     text-align: end;
@@ -203,7 +207,7 @@ body{
     gap: 50px;
 }
 .full_name{
-    font-size: 40px;
+    font-size: 34px;
     color: #222222;
 }
 .profession{
@@ -211,7 +215,8 @@ body{
     color: #373737;
 }
 .about_me{
-    font-size: 15px;
+    font-size: 13px;
+    opacity: 0.7;
     letter-spacing: 0.5px;
 }
 #hire_me{
@@ -235,7 +240,7 @@ body{
     width: 100vw;
     height: 700px;
     gap: 30px;
-    font-size: 20px;
+    font-size: 18px;
     color: #555555;
 }
 .skill_percent{
@@ -285,6 +290,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     max-width: 1200px;
     width: 100vw;
+    font-family: roboto;
 }
 .information_box{
     background-color: #131A36;
@@ -297,11 +303,11 @@ body{
     color: white;
 }
 .information_title{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 .information_text{
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 15px;
 }
 .information_icon_outbox{
@@ -320,6 +326,7 @@ body{
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin: 40px auto;
+    font-family: roboto;
 }
 .service_box{
     height: 300px;
@@ -331,12 +338,12 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(236, 236, 236);
 
 }
 .service_name{
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 600;
     color: #131A36;
 }
@@ -347,6 +354,7 @@ body{
     background-size: cover;
     min-height: 400px;
     padding-left: 100px;
+    font-family: roboto;
 }
 .recomendation_box{
     background-color: rgb(93, 93, 93);
@@ -385,7 +393,7 @@ body{
     color: rgb(255, 255, 255);
     max-height: 400px;
     height: 100vh;
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
     align-content: center;
 }
@@ -404,7 +412,7 @@ body{
 }
 .recm_title{
     width: 200px;
-    font-size: 34px;
+    font-size: 30px;
     color: white;
 }
 .recm_profession{
@@ -430,9 +438,11 @@ body{
     display: none;
 }
 .project_title{
-    font-size: 60px;
+    font-size: 55px;
     text-align: center;
     margin: 100px auto;
+    font-family: roboto;
+    font-weight: 100;
 }
 .latest_project_container{
     max-width: 1000px;
@@ -441,6 +451,7 @@ body{
     margin: 0 auto;
     justify-content: space-evenly;
     gap: 20px;
+    font-family: roboto;
 }
 .project_names{
     max-width: 200px;
@@ -476,13 +487,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 26px;
     color: #ffffff;
 }
 .articles_container{
     margin: 0 auto;
     max-width: 1400px;
     width: 100vw;
+    font-family: roboto;
 }
 .articles_wrapper{
     max-width: 1000px;
@@ -512,11 +524,11 @@ body{
     background-color: #FAFAFA;
 }
 .company_name{
-    font-size: 14px;
+    font-size: 12px;
     color: #555555;
 }
 .article_profession{
-    font-size: 35px;
+    font-size: 33px;
 }
 .article_icon_box{
     padding: 10px;
@@ -539,7 +551,7 @@ body{
 }
 .article_year{
     rotate: -90deg;
-    font-size: 15px;
+    font-size: 12px;
     width: 70px;
 }
 .article_photo{
@@ -569,6 +581,7 @@ body{
     grid-template-columns: repeat(5, 1fr);
     gap: 50px;
     margin: 0 auto;
+    font-family: poppins;
 }
 .rosa_team_box{
     width: 150px;
@@ -591,6 +604,7 @@ body{
     display: none;
     scale: 1.1;
     border-radius: 10px;
+    font-size: 12px;
 }
 #rosaBox1{
     background-image: url(./img/burberry_logo.jpg);
@@ -632,6 +646,11 @@ body{
     justify-content: center;
     align-items: center;
     gap: 40px;
+    font-family: lato;
+}
+#contact_us{
+    font-weight: 600;
+    font-family: roboto;
 }
 #form{
     max-width: 700px;
@@ -661,7 +680,7 @@ input{
     background-color: #ffffff;
     font-weight: 600;
     font-size: 12px;
-    letter-spacing: 1px;
+    font-family: montserrat;
 }
 a{
     text-decoration: none;
@@ -680,17 +699,18 @@ a{
     background-image: none;
     gap: 20px;
     height: 300px;
+    font-family: poppins;
 }
 .roca_footer_title{
     color: white;
-    font-size: 45px;
+    font-size: 40px;
 }
 .title_dot{
     color: #E93656;
-    font-size: 50px;
+    font-size: 46px;
 }
 .footer_content{
-    font-size: 20px;
+    font-size: 18px;
     color: #939393;
 }
 .footer_icon{
@@ -705,6 +725,7 @@ a{
     max-height: 100px;
     background-image: none;
     background-color: #171717;
+    font-family: roboto;
 }
 
 
