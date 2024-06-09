@@ -735,6 +735,7 @@ a{
         flex-direction: column;
         padding-left: 30px;
         justify-content: space-around;
+        margin-top: 250px;
     }
     .my_photo{
         max-width: 450px;
