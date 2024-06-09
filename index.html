@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"               content="http://127.0.0.1:5500/index.html" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Nikusha Donadze" />
+    <meta property="og:description"        content="Hola! This is my resume. if you want to see my experiences, skills and etc. you can open the website <3 " />
+    <meta property="og:image"              content="./img/bulb.png" />
+    <meta name="description" content="My resume">
+    <meta name="keywords" content="Hover, creativity, about me">
+    <meta name="author" content="Nikusha Donadze">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
     <title>My resume</title>
+    <link rel="icon" type="image/x-icon" href="./img/head_icon.png">
 </head>
 <body>
     <div class="slider_container">
@@ -57,7 +66,7 @@
             </div>
             <p class="about_me">Hello, i'm junior Front-end web developer. I'm new in the programmer's world, but i'm so determined to become a successful and one of the best in this field. Also, i'm very skillful and my hard-working helps me, that learn most of the stuffs so easily and qualitatively.</p>
             <div>
-                <a href="index.html"> <button id="hire_me">Hire me</button> </a>
+                <a href="https://www.facebook.com/" target="blank"> <button id="hire_me">Hire me</button> </a>
             </div>
         </div>
         <div class="more_my_photo">
@@ -617,7 +626,6 @@
                     statusBox.style.color = "green"
                     statusBox.style.textAlign = "center"
                     statusBox.style.fontSize = "20px"
-                    statusBox.style.fontWeight = "600"
                     statusBox.style.marginTop = "20px"
                 }
 
@@ -631,7 +639,6 @@
                     statusBox.style.color = "green"
                     statusBox.style.textAlign = "center"
                     statusBox.style.fontSize = "20px"
-                    statusBox.style.fontWeight = "600"
                     statusBox.style.marginTop = "20px"
                 }
 
@@ -645,7 +652,6 @@
                     statusBox.style.color = "green"
                     statusBox.style.textAlign = "center"
                     statusBox.style.fontSize = "20px"
-                    statusBox.style.fontWeight = "600"
                     statusBox.style.marginTop = "20px"
                 }
                 
@@ -659,7 +665,6 @@
                     statusBox.style.color = "green"
                     statusBox.style.textAlign = "center"
                     statusBox.style.fontSize = "20px"
-                    statusBox.style.fontWeight = "600"
                     statusBox.style.marginTop = "20px"
                 }
                 
@@ -669,7 +674,6 @@
                 statusBox.style.color = "red";
                 statusBox.style.fontSize = "20px";
                 statusBox.style.marginTop = "20px" 
-                statusBox.style.fontWeight = "600"
             }
 
             const formData = new FormData(form);
@@ -687,7 +691,6 @@
                 if (document.getElementById("message_textarea").style.border === "2px solid green" && document.getElementById("website").style.border === "2px solid green" && document.getElementById("name").style.border === "2px solid green" && document.getElementById("email").style.border === "2px solid green") {
                     statusBox.textContent = "Thank you for getting in touch! We appreciate you contacting us."
                     statusBox.style.fontSize = "14px"
-                    statusBox.style.fontWeight = "600"
                     setTimeout(() => {
                         document.getElementById("message_textarea").style.border = "none"
                         document.getElementById("email").style.border = "none"

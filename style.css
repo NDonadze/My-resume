@@ -727,6 +727,10 @@ a{
     background-color: #171717;
     font-family: roboto;
 }
+#statusBox{
+    font-family: roboto;
+    font-weight: 600;
+}
 
 
 
