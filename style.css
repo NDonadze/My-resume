@@ -311,13 +311,15 @@ body{
     padding-top: 15px;
 }
 .information_icon_outbox{
-    border-radius: 50%;
+    border-radius: 100%;
     padding: 10px;
+    border: 4px dotted white;
 }
 .information_icon_outbox:hover{
     background-color: #E93656;
     transition-duration: 0.5s;
     transition-timing-function: linear;
+    border: none;
 }
 .service_container{
     max-width: 1200px;
